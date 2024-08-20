@@ -1,0 +1,42 @@
+[
+    {
+      "date": "2024-08-21",
+      "bundles": ["Bundle Alpha", "Bundle Bravo", "Bundle Charlie"]
+    },
+    {
+      "date": "2024-08-22",
+      "bundles": ["Bundle Delta", "Bundle Echo", "Bundle Foxtrot"]
+    },
+    {
+      "date": "2024-08-23",
+      "bundles": ["Bundle Golf", "Bundle Hotel"]
+    },
+    {
+      "date": "2024-08-24",
+      "bundles": ["Bundle India", "Bundle Juliet", "Bundle Kilo", "Bundle Lima"]
+    },
+    {
+      "date": "2024-08-25",
+      "bundles": ["Bundle Mike", "Bundle November", "Bundle Oscar"]
+    },
+    {
+      "date": "2024-08-26",
+      "bundles": ["Bundle Papa", "Bundle Quebec"]
+    },
+    {
+      "date": "2024-08-27",
+      "bundles": ["Bundle Romeo", "Bundle Sierra", "Bundle Tango", "Bundle Uniform"]
+    },
+    {
+      "date": "2024-08-28",
+      "bundles": ["Bundle Victor", "Bundle Whiskey"]
+    },
+    {
+      "date": "2024-08-29",
+      "bundles": ["Bundle X-ray", "Bundle Yankee", "Bundle Zulu"]
+    },
+    {
+      "date": "2024-08-30",
+      "bundles": ["Bundle Alpha", "Bundle Delta", "Bundle Golf"]
+    }
+  ]
