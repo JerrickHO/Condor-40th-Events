@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI)
   });
 
 // Route to get bundles for a specific date
-app.get('/bundle/:date', async (req, res) => {
+app.get('/bundles/:date', async (req, res) => {
   const { date } = req.params;
 
   // Access the specific database dynamically
@@ -37,21 +37,48 @@ app.get('/bundle/:date', async (req, res) => {
       type: [String],
       required: true,
     },
+    imageURL: {
+        type: String,
+        required: true,
+      },
+    bundleURL1: {
+        type: String,
+        required: true,
+    },
+    bundleURL2: {
+        type: String,
+        required: true,
+    },
+    bundleURL3: {
+        type: String,
+        required: true,
+    },
+    bundleURL4: {
+        type: String,
+        required: true,
+    },
+    bundleURL5: {
+        type: String,
+        required: true,
+    },
   }), 'bundle'); // Explicitly set the collection name
 
   try {
     const bundle = await Bundle.findOne({ date });
-    console.log('Found bundle:'+ bundle);
     if (bundle) {
-      res.json(bundle.bundles);
+      res.json(bundle);
     } else {
-      res.json('No Bundles []'); // No bundles for this date
+      res.json([]); // No bundles for this date
     }
   } catch (error) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
+// Start the server
+app.listen(PORT, () => {
+  console.log('Server is running on http://localhost:'+ PORT);
+});
 // Start the server
 app.listen(PORT, () => {
   console.log('Server is running on http://localhost:'+PORT)
